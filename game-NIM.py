@@ -90,7 +90,7 @@ def computer_chooses_move() -> int:
             print(f"Computer wins the championship with {championship.num_wins_computer + 1} wins! ")
         return inputs.current_amount
 
-# Very good point, this line is a good form to show us that this is a interpretable program that starts here <3
+# Very good point, this line is a good way to show us that this is a interpretable program that starts here <3
 if __name__ == '__main__':
     championship()
     for round in range(championship.num_rounds):
