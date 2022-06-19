@@ -1,12 +1,9 @@
-'''
-This is a game that consists on a player playing against a computer in turns and entering 
-numbers that are lower or equal to a chosen limit for the input. these numbers subtracts the total 
-amount of pieces and the goal is to lower the amount of pieces to 0. the computer's supposed to win
-every time.
-'''
+# Write the comments in funcions using the pipe |. See function inputs.
+# Caution with attribute notation function.attribute
 
 def inputs() -> int:
-    ''' Requests the necessary variables to start the game from the player. 
+    ''' 
+    | Requests the necessary variables to start the game from the player. 
     '''
     inputs.num_pieces = int(input("How many pieces would you like the match to start with? "))
     while inputs.num_pieces <=1:
@@ -93,10 +90,12 @@ def computer_chooses_move() -> int:
             print(f"Computer wins the championship with {championship.num_wins_computer + 1} wins! ")
         return inputs.current_amount
 
-
+# Very good point, this line is a good form to show us that this is a interpretable program that starts here <3
 if __name__ == '__main__':
     championship()
     for round in range(championship.num_rounds):
+
+        # Good strip parameters
         if championship.champ in ('yes','y','ye', 'ys'):
             print(f" ROUND {round + 1}")
         inputs()
